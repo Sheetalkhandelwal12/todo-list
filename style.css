@@ -1,0 +1,83 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Preahvihear', sans-serif;
+}
+
+.container{
+    background-image: url(img1.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center ;
+
+}
+
+.hero{
+    /* border: 1px solid ; */
+    background-color: #F6F4EB;
+    height: 500px;
+    width: 400px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 25px;
+    box-shadow: 2px 5px 5px #989693bd;
+}
+
+li{
+    list-style: none;
+}
+
+h1{
+    margin-top: 10px;
+}
+
+input{
+    border-radius: 20px;
+    width: 320px;
+    height: 40px;
+    padding-left: 10px;
+    border:none ;
+    box-shadow: 2px 5px 5px #989693bd;
+    margin-left: 20px;
+     border-top-right-radius: 0 ;
+     border-bottom-right-radius:0 ;
+}
+
+button{
+    height: 40px;
+    width: 70px;
+    margin-right: 20px;
+    /* position: ; */
+    padding: 0% 20px;
+    background-color: #E8A0BF;
+    border: none;
+    box-shadow: 2px 5px 5px #989693bd;
+    border-top-right-radius: 20px ;
+    border-bottom-right-radius: 20px; 
+    color: white;
+    
+}
+
+.align{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+ul button{
+  border-radius: 20px;
+  text-align: center;
+  /* padding-right: 5px; */
+  width: 30px;
+}
