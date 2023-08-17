@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            
+            <h1>TO DO list</h1>
+            <div class="align">
+             <input type="text" placeholder="Enter your task here...">
+                <button>Add</button>
+            </div>
+            <ul>
+                <li> task 1</li>
+                <li> task 2</li>
+                <li> task 3</li>    
+            </ul>
+            <script>
+                    const my_list = document.querySelector ('ul');
+
+        
+        
+const my_button = document.querySelector ('button');
+const my_input = document.querySelector ('input');
+
+my_button.addEventListener("click" , ()=>{
+
+    const my_text = my_input.value
+    const new_list = document.createElement('li');
+    const text_node = document.createTextNode(my_text);
+    
+    const my_delete_button = document.createElement ('button');
+    const delete_text_node = document.createTextNode ('x');
+
+    my_delete_button.addEventListener("click",()=>{
+        my_list.removeChild(new_list)
+    })
+    my_delete_button.append(delete_text_node);
+    new_list.append(my_text)
+    new_list.append(my_delete_button)
+    my_list.appendChild(new_list)
+
+})
+
+
+            </script>
+        </body>
+        </html>     
+    </div>
+</div>
